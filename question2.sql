@@ -1,0 +1,18 @@
+BEGIN TRANSACTION;
+
+ALTER TABLE Segment
+ALTER COLUMN indIP varchar(255);
+
+ALTER TABLE Salle
+ALTER COLUMN nSalle varchar(255);
+
+ALTER TABLE Logiciel
+ALTER COLUMN nLog varchar(255);
+
+ALTER TABLE Poste
+ALTER COLUMN nPoste varchar(255);
+
+ALTER TABLE Installer
+ALTER COLUMN dateIns TIMESTAMP NULL;
+
+COMMIT;
